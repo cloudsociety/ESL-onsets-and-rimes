@@ -26,9 +26,9 @@ import "jquery-ui-touch-punch-c/jquery.ui.touch-punch.min.js";
         bind(el, binding, vnode) {
           $(document).ready(function() {
             $(el).draggable({
-              snap: true,
+              // snap: true,
               stack: ".word",
-              distance: 0,});
+              distance: 0});
           });
         }
       }
