@@ -26,7 +26,7 @@ import "jquery-ui-touch-punch-c/jquery.ui.touch-punch.min.js";
         bind(el, binding, vnode) {
           $(document).ready(function() {
             $(el).draggable({
-              // snap: true,
+              snap: true,
               stack: ".word",
               distance: 0});
           });
@@ -34,8 +34,8 @@ import "jquery-ui-touch-punch-c/jquery.ui.touch-punch.min.js";
       }
     },
     created(){
-      this.styleObject.top = `${_.random(20,50)}vh`;
-      this.styleObject.left = `${_.random(30,60)}vw`;
+      this.styleObject.top = `${_.random(20,50) - 40}vh`;
+      this.styleObject.left = `${_.random(30,60) - 40}vw`;
       this.styleObject['z-index'] = _.random(1,10);
     }
   }
@@ -52,7 +52,7 @@ import "jquery-ui-touch-punch-c/jquery.ui.touch-punch.min.js";
   min-width: 100px;
   padding: 10px 5px;
 
-  position: absolute;
+  // position: absolute;
 
   &__onset {
     border-right: 0;
