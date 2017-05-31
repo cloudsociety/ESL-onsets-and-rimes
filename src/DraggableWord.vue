@@ -1,5 +1,5 @@
 <template>
-        <p class="word" :style="styleObject" v-drag>{{word}}</p>
+        <p class="word" v-drag>{{word}}</p>
 </template>
 
 <script>
